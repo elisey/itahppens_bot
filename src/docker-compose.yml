@@ -1,7 +1,13 @@
-version: '3.3'
+version: '3.9'
 services:
     bot:
         build:
             context: ''
             dockerfile: docker/Dockerfile
         container_name: ithappens_bot
+        networks:
+          - vpc
+
+networks:
+  vpc:
+    name: ithappens-bot-network
