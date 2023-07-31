@@ -5,6 +5,7 @@ services:
             context: ''
             dockerfile: docker/Dockerfile
         container_name: ithappens_bot
+        restart: always
         networks:
           - vpc
 
