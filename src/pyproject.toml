@@ -5,9 +5,9 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-python-telegram-bot = "20.0a2"
-pydantic = {extras = ["dotenv"], version = "^1.9.1"}
+python = "^3.11"
+python-telegram-bot = "^20.4"
+pydantic = {extras = ["dotenv"], version = "^2.0.0"}
 aiohttp = "^3.8.1"
 
 [tool.poetry.dev-dependencies]
