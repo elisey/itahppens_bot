@@ -1,6 +1,6 @@
 version: '3.9'
 services:
-    bot:
+    ithappens_bot:
         build:
             context: ''
             dockerfile: docker/Dockerfile
