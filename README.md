@@ -9,19 +9,17 @@ This service depends on [Quotes Service](https://github.com/elisey/quotes_servic
 ### How to deploy
 
 ```shell
-cd src
 cp docker/prod.env.example docker/prod.env
 vim docker/prod.env
 
-docker-compose up --build -d bot
+docker-compose up --build -d app
 ```
 
 ### How to run locally
 
 ```shell
-cd src/bot
-cp .env.example .env
-vim .env
+cp docker/prod.env.example app/.env
+vim app/.env
 
-docker-compose up --build -d bot
+docker-compose up --build -d app
 ```

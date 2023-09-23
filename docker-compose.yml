@@ -7,8 +7,9 @@ services:
         container_name: ithappens_bot
         restart: always
         networks:
-          - vpc
+        - nginx-network
 
 networks:
-  vpc:
-    name: ithappens-bot-network
+  nginx-network:
+    external: true
+    name: nginx-network
